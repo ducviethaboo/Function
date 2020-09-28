@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function ckeckPrime(number) {
+        let result = "";
+        if(number = 2) return result = "La so nguyen to"
+        if(number < 2) return result = "Khong phai la so nguyen to"
+        for (let i = 2; i < number; i++) {
+            if(number % i === 0) {
+                return result = "Khong phai la so nguyen to"
+            }
+        }
+        return result = "La so nguyen to"
+    }
+    document.write(ckeckPrime(+prompt("Nhap vao mot so")))
+</script>
+</body>
+</html>
